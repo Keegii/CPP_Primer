@@ -1,0 +1,29 @@
+//语句块顺序执行，控制流语句可帮助我们写出更复杂的执行路径
+//while，不满足条件则会持续执行：
+//打印范围内整数
+#include <iostream>
+int main()
+{
+	int sum = 0, val = 1;
+	while (val <= 10) {
+		sum += val;
+		++val;//前缀递增运算符
+	}
+	std::cout << sum << std::endl;
+	return 0;
+}
+
+
+
+//for循环：
+#include <iostream>
+int main()
+{
+	int sum = 0,
+	int val = 1;
+	for(int val = 1; val <= 10; ++val) //循环头：初始化语句、循环条件、表达式
+		sum += val;//循环体
+	
+	std::cout << sum << std::endl;
+	return 0;
+}
