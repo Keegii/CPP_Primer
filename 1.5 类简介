@@ -1,0 +1,12 @@
+//使用头文件来访问自己的应用程序所定义的类
+
+//Sales_item对象的加法
+#include <iostream>
+#include "Sales_item.h"
+int main()
+{
+	Sales_item item1, item2;
+	std::cin >> item1 >> item2;
+	std::cout << item1 + item2 << std::endl;
+	return 0;
+}
